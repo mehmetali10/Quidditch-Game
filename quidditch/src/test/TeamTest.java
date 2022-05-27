@@ -10,18 +10,17 @@ import main.models.Team;
 public class TeamTest {
     Team team;
 
-    @Before
-    public void setUp() {
 
-    }
 
     @Test
-    public void hasNullTest() {
+    public void hasNullTest()
+    {
         assertTrue(Team.hasNull(new String[] {null, "Ginny", "Katie"}));
     }
 
     @Test
-    public void hasBlakTest() {
+    public void hasBlakTest()
+    {
         assertTrue(Team.hasBlank(new String[] {"  ", "Ginny", "Katie"}));
     }
 
